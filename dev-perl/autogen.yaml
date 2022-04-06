@@ -1,0 +1,5 @@
+metacpan_modules:
+  generator: metacpan
+  packages:
+    - Cairo-GObject
+    - Gtk3

@@ -14,10 +14,11 @@ RDEPEND="
 	virtual/perl-Carp
 	virtual/perl-Exporter
 	virtual/perl-XSLoader
+	dev-perl/Module-Build
 "
 BDEPEND="${RDEPEND}
-	dev-perl/Module-Build
 	test? (
 		virtual/perl-Test-Simple
 	)
 "
+DEPEND="${RDEPEND}"

@@ -12,7 +12,7 @@ async def generate(hub, **pkginfo):
 
 	options = [opt.get('value').split('/') for opt in soup if opt and opt.get('value')]
 
-	versions = [(re.findall(regex, a[1])[0], a[0]) for a in options]
+	versions = [(re.findall(regex, a[3])[0], a[0]) for a in options]
 	latest = max([(Version(v[0]), v[0], v[1]) for v in versions])
 
 	links = BeautifulSoup(html, "html.parser").find_all("a")

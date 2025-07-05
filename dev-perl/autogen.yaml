@@ -1,5 +1,19 @@
 metacpan_modules:
-  generator: metacpan
+  generator: dirlisting-1
   packages:
-    - Cairo-GObject
-    - Gtk3
+    - Cairo-GObject:
+        cat: dev-perl
+        desc: Popular filesystem benchmark
+        homepage: https://metacpan.org/pod/Cairo::GObject
+        dir:
+          url: https://cpan.metacpan.org/authors/id/X/XA/XAOC/
+          order: asc
+          format: tar.gz
+    - Gtk3:
+        cat: dev-perl
+        desc: Perl interface to the 3.x series of the gtk+ toolkit
+        homepage: https://metacpan.org/pod/Gtk3
+        dir:
+          url: https://cpan.metacpan.org/authors/id/X/XA/XAOC/
+          order: asc
+          format: tar.gz
